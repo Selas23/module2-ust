@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="3">
+    <script>
+            var n=prompt("enter the number");
+            var b=prompt("enter the start value");
+            var e=prompt("enter the end value");
+
+            function tab(n,b,e){
+            for(i=b;i<=e;i++){
+                document.write("<tr><td>"+n+"| * |"+i+"| = |"+n*i+"</td></tr>\n");
+            }
+            }
+            tab(n,b,e);
+    </script>
+     </table>
+</body>
+
+<!-- document.write("<tr><td> 10| * |"+i+"| = |"+10*i+"</td></tr>\n"); -->
+</html>

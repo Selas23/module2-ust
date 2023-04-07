@@ -1,0 +1,184 @@
+function reverse(str){
+
+    for(var i=1;i<=str.length;i++){
+        console.log(str[str.length-i]);
+    }
+
+}
+
+function poly(str){
+    var back,fwd;
+    for(var i=0;i<str.length;i++) {
+        back = str[(str.length - 1)-i];
+        fwd = str[i];
+        //console.log(back + ':' + fwd);
+        if(back != fwd)
+        return false;
+    }
+return true;
+}
+
+
+function isUpperCase(c) {
+    if( c >='A' &&  c <='Z')    return true;
+}
+
+
+countcase('HeLLo');
+reverse("hello");
+s="sad";
+console.log(poly(s));
+if(poly(s))
+console.log("word is palnidrom");
+else
+console.log("word is jot palm");
+
+
+
+function wages(totalHours,hourlyWage) {
+    var regularHours=0;
+    var overtime=0;
+
+    if (totalHours <= 40) {
+        regularHours = totalHours
+        overtime = 0
+        console.log("No over due work time")
+    }
+    else {
+        overtime = totalHours - 40
+        regularHours = 40
+        console.log(hourlyWage*regularHours + (1.5*hourlyWage)*overtime);
+    }
+}
+
+wages(54,100);
+
+
+
+function makewithdraw(balance) {
+    this.balance = balance;
+    this.withdraw=withdraw;
+}
+
+
+function withdraw(amount) {
+
+
+        if (amount > this.balance) {
+            console.log("Insufficient funds");
+            return;
+        }
+        this.balance=this.balance-amount;
+        return this.balance;
+
+
+}
+var acc = new makewithdraw(500);
+console.log(acc.withdraw(100));
+
+
+function sort(arr){
+    var i,j;
+
+    for(i=0;i<=arr.length;i++) {
+        for (j = i + 1; j <= arr.length; j++)
+            if (arr[j] < arr[i]) {
+                var temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+    }
+ return arr;
+}
+
+array=[3,5,4,8,1];
+console.log("after sort: "+sort(array));
+
+
+
+
+var s ="Hello World Welcome to programming";
+
+checkUpperLowerCaseString(s);
+
+
+function checkUpperLowerCaseString(str) {
+
+var len =  str.length;
+lowercount=0;
+uppercount=0;
+
+for ( var i =0; i < len; i++) {
+
+ // console.log(str[i])  ;
+    if(checkupper(str[i]))    uppercount++;
+
+    else lowercount++;
+
+}
+
+
+console.log("uppercount:", uppercount);
+console.log("lowecount:", lowercount);
+
+}
+
+
+function checkupper(c) {
+
+    if( c >='A'  && c<='Z')  return true;
+
+}
+
+
+function Dictionary() {
+this.add = add;
+this.datastore = new Array();
+this.find = find;
+this.remove = remove;
+this.showAll = showAll;
+}
+function add(key, value) {
+this.datastore[key] = value;
+}
+function find(key) {
+return this.datastore[key];
+
+}
+function remove(key) {
+delete this.datastore[key];
+}
+function showAll() {
+for each (var key in Object.keys(this.datastore)) {
+print(key + " -> " + this.datastore[key]);
+}
+}
+
+load("Dictionary.js");
+var pbook = new Dictionary();
+pbook.add("Mike","123");
+pbook.add("David", "345");
+pbook.add("Cynthia", "456");
+print("David's extension: " + pbook.find("David"));
+pbook.remove("David");
+pbook.showAll();
+The output from this program is:
+David's extension: 345
+Mike -> 123
+Cynthia -> 456
+
+
+function fact(n) {
+var s = new Stack();
+while (n > 1) {
+s.push(n--);
+}
+var product = 1;
+while (s.length() > 0) {
+product *= s.pop();
+}
+return product;
+}
+print(factorial(5)); // displays 120
+print(fact(5)); // displays 120
+

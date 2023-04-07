@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //javascript need no return type
+        var a=10;
+        function add(){
+            return a+20;
+        }
+        // alert(add());
+
+        function add(a,b){
+            return a+b;
+        }
+
+        // alert(add());
+        // alert(add(20,30));
+
+        document.write(add(20,30));
+        console.log(add(35,87));
+
+        //factorial recursion
+        var fact=5;
+        function calfact(n)
+        {
+        if(n!=1)
+        {
+        fact=fact*(n-1);
+        n=n-1;
+        return calfact(n); // ***
+        }
+        else
+        {
+        return fact;
+        }
+        }
+        document.write(calfact(5));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+
+<hr>
+<h1>Math functions: </h1>factorial
+<h3>Enter a number: <input type="text" [(ngModel)]="n" /></h3>
+
+<h3>
+    <button type="button" (click)="factorial(n)">Factorial</button> &nbsp; {{result}}
+</h3>
+<hr>
+Sum
+<h3>Enter number 1: <input type="number" [(ngModel)]="n1" /></h3>
+<h3>Enter number 2: <input type="number" [(ngModel)]="n2" /></h3>
+<h3>
+    <button type="button" (click)="sum(n1,n2)">Sum</button> &nbsp; {{result1}}
+</h3>
+<hr>
+Multiply
+<h3>Enter number 1: <input type="number" [(ngModel)]="a1" /></h3>
+<h3>Enter number 2: <input type="number" [(ngModel)]="a2" /></h3>
+<h3>
+    <button type="button" (click)="multiply(a1,a2)">Multiply</button> &nbsp; {{result2}}
+</h3>
+<hr>
+Subtract
+<h3>Enter number 1: <input type="number" [(ngModel)]="b1" /></h3>
+<h3>Enter number 2: <input type="number" [(ngModel)]="b2" /></h3>
+<h3>
+    <button type="button" (click)="sub(b1,b2)">Subtract</button> &nbsp; {{result3}}
+</h3>
+<hr>
+
+<h3>Enter number 1: <input type="number" [(ngModel)]="c1" /></h3>
+<h3>Enter number 2: <input type="number" [(ngModel)]="c2" /></h3>
+<h3>
+    <button type="button" (click)="div(c1,c2)">Division</button> &nbsp; {{result4}}
+</h3>
+<hr>
+<h3>Enter number 1: <input type="number" [(ngModel)]="d1" /></h3>
+<h3>Enter number 2: <input type="number" [(ngModel)]="d2" /></h3>
+<h3>
+    <button type="button" (click)="mod(d1,d2)">Modulus</button> &nbsp; {{result5}}
+</h3>
+<hr>
+
+<h3>Enter number 1: <input type="number" [(ngModel)]="e1" /></h3>
+<h3>Enter number 2: <input type="number" [(ngModel)]="e2" /></h3>
+<h3>
+    <button type="button" (click)="pow(e1,e2)">Power</button> &nbsp; {{result6}}
+</h3>
+<hr>
+
+<h3>Enter a number: <input type="text" [(ngModel)]="f1" /></h3>
+
+<h3>
+    <button type="button" (click)="square(f1)">Square</button> &nbsp; {{result7}}
+</h3>
+<hr>
+<h3>Enter a number: <input type="text" [(ngModel)]="g1" /></h3>
+
+<h3>
+    <button type="button" (click)="cube(g1)">Cube</button> &nbsp; {{result8}}
+</h3>
+<hr>
+<h3>Enter a number: <input type="number" [(ngModel)]="h1" /></h3>
+
+<h3>
+    <button type="button" (click)="oddeven(h1)">Odd or Even</button> &nbsp; {{result9}}
+</h3>
+<hr>
